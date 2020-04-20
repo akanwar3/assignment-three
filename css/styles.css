@@ -1,0 +1,533 @@
+/* ---------------main container ------------------ */ 
+body {
+    background-color: #ebebeb;
+    color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+}
+
+.flex-container {
+    display: flex;
+}
+
+/* ------------------------header------------------------------ */
+.header-area {
+    align-items: center;
+    justify-content: space-between;
+    line-height: 1;
+    padding: 1.5625rem 1.25rem;
+}
+
+.header-area h1 {
+    font-weight: 900;
+    font-size: 3.55125rem;
+    color: #6017a3;
+}
+
+.header-area p {
+    font-style: italic;
+    font-size: 0.875rem;
+    color:#7d7d7d;
+}
+
+/* -------------------------banner----------------------------- */
+.banner-area {
+    text-align: center;
+    padding-top: 2.5rem;
+}
+
+.banner-area {
+    background-image: url(../img/banner-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 12.5rem;
+}
+
+.banner-area h2 {
+    font-weight: 900;
+    font-size: 1.9375rem;
+}
+
+.banner-area p {
+    font-size: 1.25rem;
+}
+
+/* ------------------------links------------------------------ */
+
+.link-list a {
+    color: #707070;
+    font-size: 1.0625rem;
+    text-decoration: none;
+}
+
+header nav {
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+
+.link-list li {
+    background: linear-gradient(rgba(240, 240, 240, 1), rgba(255, 255, 255, 3));
+    border-bottom: 2px solid #d4d4d4;
+    line-height: 3.75rem;
+}
+.link-list li:last-of-type {
+    border-bottom: 5px solid #6017a3;
+}
+
+.link-list li:hover{
+    cursor: pointer;
+    background-image: linear-gradient(#ffffff, #d4d4d4);
+}
+
+.link-list img {
+    display: inline;
+    padding: 0 1.4375rem 0 1.25rem;
+}
+
+.show-nav {
+    max-height: 30.375rem;
+}
+
+.effect-icons span {
+    background-color: #6017a3;
+    display: block;
+    height: 0.375rem;
+    margin-bottom: 0.25rem;
+    width: 2.25rem;    
+}
+
+/* --------------------------help------------------------------ */
+
+.help {
+    background-color: #2d2d2d;
+}
+
+.help-top {
+    text-align: center;
+}
+
+.help img {
+    margin: 0 auto;
+    padding-top: 1.875rem;
+}
+
+.help-top h2 {
+    font-size: 1.5625rem;
+    padding: 2.5rem 3.75rem 0 3.75rem;
+}
+
+.help h3,
+.big-idea h2 {
+    font-weight: 300;
+    font-size: 1.5625rem;
+}
+
+.help h3 {
+    margin: 1.5625rem 0;
+}
+
+.help-info {
+    display: flex;
+    padding: 0 1.25rem;
+    width: 25rem;
+}
+
+.help-flex {
+    margin-top: 2.5rem;
+}
+
+
+/* --------------------------columns----------------------------- */
+.columns {
+    flex-direction: column;
+    align-items: center;
+}
+
+.col {
+    background-color: #ffffff;
+    width: 22.5rem;
+    margin-top: 1.625rem;
+}
+
+.columns i {
+    color: #6017a3;
+}
+
+.sub-container {
+    padding: 1.25rem;
+    margin: 0 auto;
+}
+
+.columns h2 {
+    color: #252525;
+    font-size: 1.5625rem;
+}
+.columns p:first-of-type {
+    color: #6017a3;
+    font-weight: 700;
+}
+
+.columns p {
+    color: #949494;
+    padding-top: 0.9375rem;
+}
+
+
+/* -----------------------big-idea--------------------------- */
+.big-idea {
+    background-image: url(../img/big-idea-mobile.png);
+    background-repeat: no-repeat;
+    background-position:bottom right;
+    background-color: #222222;
+    height: 322px;
+}
+
+.big-idea-container {
+    text-align: center;
+    padding: 11.5625rem 1.875rem 0 1.875rem;
+    margin: 0 auto;
+}
+
+/* -------------------------teams----------------------- */
+
+.teams h2{
+    color: #717171;
+    font-weight: 300;
+    font-size: 1.9375rem;
+}
+.teams p {
+    color:#939393;
+}
+
+.profiles h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.profiles p,
+.profiles h3 {
+    color: #9b9b9b;
+}
+
+.teams-container {
+    text-align: center;
+    padding: 3.4375rem 0 1.25rem 0;
+    margin: 0 auto;
+}
+.teams {
+    padding: 0 1.3125rem;
+}
+.profiles {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.profiles>div {
+    flex-basis: 47%;
+}
+
+.pictures {
+    position: relative;
+}
+
+.pictures i {
+    color: #6017a3;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.names {
+    padding: 1.5625rem 0;
+}
+
+/* ---------------------footer-------------------- */
+
+.footer-logo h2 {
+    font-size: 2.44125rem;
+    font-weight: 900;
+}
+.footer-logo {
+    line-height: 1;
+    padding-bottom: 3.125rem;
+}
+.footer-logo p {
+    color: #7d7d7d;
+    font-size: 0.75rem;
+    font-style: italic;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer-inner-container p {
+    color: #c9c9c9;
+    padding-bottom: 1.875rem;
+}
+
+.footer-section {
+    padding: 1.75rem 1.25rem 1.75rem 1.25rem;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #373737;
+    border-top: 30px solid #6017a3;
+    margin-top: 2.875rem;
+}
+.footer-logo img {
+    line-height: 1;
+    margin-right: 8px;
+}
+
+footer ul {
+    justify-content: space-between;
+}
+
+.footer-link {
+    padding: 1.875rem 0 1.25rem 0;
+}
+
+.footer-link li:hover {
+    border-bottom: 5px solid #6017a3;
+}
+
+.footer-icons a {
+    padding-left: 7px;
+}
+
+.footer-icons {
+    margin-bottom: 1.25rem;
+    width: 19.125rem;
+}
+
+.footer-section-1 {   
+    width: 35.125rem;
+    margin-left: 12.5rem;
+    margin-right: 6.75rem;
+}
+
+.footer-section-2 {
+    width: 31.25rem;
+    margin-right: 10.375rem;
+}
+
+
+
+/* -----------------------media queries-------------------*/
+@media only screen and (min-width: 768px){
+    .container {
+        max-width: 100%;
+    }
+    .banner-area {
+        background-image: url(../img/banner-768.jpg);
+        height: 400px;
+    }
+
+    .effect-icons {
+        visibility: hidden;
+    }
+
+    .header-area {
+        justify-content: flex-start;
+    }
+    .header-area img {
+        padding-right: 1.25rem;
+    }
+
+    /* -------------------------banner-area -------------------------------------- */
+    .banner-area h2 {
+        font-size: 3rem;
+        padding: 0;
+    }
+
+    .banner-area p,
+    .help p {
+        font-size: 1.5625rem; /* 25px */
+    }
+    .banner-box {
+        padding: 5.625rem 3.75rem 0 3.75rem;
+    }
+
+    /* --------------------------columns--------------------------------  */
+
+    .columns {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 1.25rem;
+}
+
+.col {
+    flex-basis: 48%;
+}
+
+.clear-pricing {
+    flex-basis: 100%;
+}
+
+
+    /* help  */
+    .help-info {
+        display: flex;
+        align-items: flex-start;
+        padding-bottom: 5.125rem;
+    } 
+
+    .help-info>div{
+        margin-left: 1.875rem;
+    }
+
+    .help h2 {
+        font-size: 2.4375rem; 
+        padding: 2.5rem 2.5rem 0 2.5rem;
+    }
+
+    .help h3,
+    .big-idea h2 {
+        font-size: 1.9375rem; 
+    }
+
+    /* ------------------------------big-idea ---------------------------------------------------- */
+    .big-idea {
+        background-image: url(../img/big-idea-768.png);
+        background-position:center top 3rem;
+        height: 342px;
+    }
+    .big-idea h2 {
+        padding-top: 2rem; 
+    }
+
+    /*--------------------- teams---------------------------  */
+    .teams h2,
+    .teams h3 {
+        font-size: 2.4375rem; 
+    }
+
+    .profiles>div {
+        flex-basis: 49%;
+    }
+    
+
+    /* --------------- links------------------- */
+    header nav {
+        max-height: 20.5rem;
+        position: static;
+        transition: none;
+    }
+    header ul {
+        display: flex;
+    }
+    .link-list img {
+        display: block;
+        margin:  auto;
+        padding-bottom: 0.75rem;
+    }
+    
+    .link-list li{
+        border-bottom: 5px solid #6017a3;
+        border-right: 1px solid  #d4d4d4;
+        flex-basis: 100%;
+        text-align: center;
+        line-height: 1.5;
+        padding: 1.25rem 0;
+    }
+
+    .link-list li:last-of-type{
+        border-right: 0;
+    }
+
+    /*--------------------------------- footer------------------------------------  */
+    footer>div{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-section-2,
+     .footer-section-1 {
+       flex-basis: 48%;
+    }
+    .footer-section-2 ul { 
+        order: 2;
+    }
+    .footer-section-2 p { 
+        order: 3;
+    }
+    
+}
+
+@media only screen and (min-width: 1140px ) {
+    .container {
+        max-width: 1146px;
+        margin: 0 auto;
+    }
+
+        /*--------------------- customers ------------------------------------  */
+        .col {
+            flex-basis: 30%;
+        }
+
+    /* -------------------- banner ----------------------- */
+    
+    .banner-area {
+        background-image: url(../img/banner-1140.jpg);
+        height: 514px;
+    }
+
+    .banner-box {
+        padding: 8.125rem 13.75rem 0 13.75rem;
+    }
+    /* -----------------------help ------------------------------ */
+    .help-flex {
+        display: flex; 
+    }
+    .help h2 {
+        font-size: 3rem; 
+    }
+    .help h3 {
+        margin: 0;
+    }
+    .help-top,
+    .help-top>.pictures{
+        flex-basis: 48%;
+    }
+    .help-info img {
+        margin: 0;
+    }
+    .help-information{
+        display: flex;
+    }
+    .help-info {
+        flex-basis: 32%;
+    }
+
+    /*--------------------- big-idea ------------------------- */
+    .big-idea {
+        background-image: url(../img/big-idea-1140.png);
+        height: 560px;
+    }
+
+    .big-idea h2 {
+        padding-top: 10rem; 
+    }
+
+    /* -----------------------------teams------------------------  */
+    .profiles {
+        flex-wrap: nowrap;
+    }
+    .profiles>div {
+        flex-basis: 22%;
+    }
+
+
+}
